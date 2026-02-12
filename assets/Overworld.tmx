@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="40" height="30" tilewidth="8" tileheight="8" infinite="0" nextlayerid="4" nextobjectid="1">
+<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="40" height="30" tilewidth="8" tileheight="8" infinite="0" nextlayerid="5" nextobjectid="2">
  <editorsettings>
-  <export target="Overworld.json" format="json"/>
+  <export target="../CP-Slime-World/assets/Overworld.json" format="json"/>
  </editorsettings>
- <tileset firstgid="1" source="../../Overworld Tileset/tileset.tsx"/>
+ <tileset firstgid="1" source="tileset.tsx"/>
  <layer id="1" name="Background" width="40" height="30">
   <data encoding="csv">
 413,548,479,481,479,480,550,480,480,413,546,546,480,414,546,549,548,550,414,548,413,413,545,479,480,413,549,545,413,480,414,546,414,480,480,413,548,547,550,482,
@@ -39,6 +39,9 @@
 </data>
  </layer>
  <layer id="2" name="Terrain" width="40" height="30">
+  <properties>
+   <property name="collides" type="bool" value="true"/>
+  </properties>
   <data encoding="csv">
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
@@ -73,6 +76,9 @@
 </data>
  </layer>
  <layer id="3" name="Trees" width="40" height="30">
+  <properties>
+   <property name="collides" type="bool" value="true"/>
+  </properties>
   <data encoding="csv">
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3169,3170,0,0,0,3174,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3235,0,0,0,0,3240,0,0,0,0,0,0,0,0,0,0,0,0,0,
@@ -106,4 +112,9 @@
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 </data>
  </layer>
+ <objectgroup id="4" name="Spawns">
+  <object id="1" name="slimeSpawn" x="107.75" y="28.5">
+   <point/>
+  </object>
+ </objectgroup>
 </map>
